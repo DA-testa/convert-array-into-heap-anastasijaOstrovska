@@ -32,7 +32,8 @@ def main():
         data = list(map(int, input().split()))
 
     elif "f" in i.lower() :
-        name = "./test/" + input()
+        name = input()
+        name = "./test/" + name
         if "a" not in name:
             with open(name, mode = 'r' ,  encoding = "utf8") as fail:
                 n = int(fail.readline())# number of elements
